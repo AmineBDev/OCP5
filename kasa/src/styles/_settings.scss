@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "font-1";
+    src: url(../assets/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "font-2";
+    src: url(../assets/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: "font-3";
+    src: url(../assets/fonts/Montserrat-Bold.ttf);
+}
+  
+$font-1: "font-1", sans-serif;
+$font-2: "font-2", sans-serif;
+$font-3: "font-3", sans-serif;
+  
+$color-1: #FF6060;
+$black: black;
+$white: white;
+$white2: #dddddd;
+$white3: #C4C4C4;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-1;
+    text-decoration: none;
+
+    a:visited {
+    color: black;
+}
+}
+
