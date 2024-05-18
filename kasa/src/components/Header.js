@@ -4,7 +4,9 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <header>
-      <img src="../img/logo.svg" alt="Logo de l'agence Kasa" />
+      <NavLink to="/">
+        <img src="../img/logo.svg" alt="Logo de l'agence Kasa" />
+      </NavLink>
       <nav>
         <ul>
           <li>

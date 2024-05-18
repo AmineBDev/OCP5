@@ -1,89 +1,200 @@
-.announce-container {
-    max-width: 70%;
+.announce {
+    max-width: 1240px;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
 
-    span {
-        font-size: 18px;
+    @media screen and (max-width: 1300px) {
+        width: 90%;
     }
 
-    .infos-announce {
+    .carrousel-container {     
+        
+         .img-logement {
+            max-width: 1240px;
+            height: 415px;
+            background-position: center;
+            background-size: cover;
+            border-radius: 25px;
 
-        h1 {
-            color: $color-1;
-            font-size: 36px;
-            font-weight: 500;
-            line-height: 50px;
-        }
-
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-                
-            li {
-                list-style: none;
-                background: $color-1;
-                color: white;
-                padding: 2.5px 40px;
+            @media screen and (max-width: 560px) {
+                height: 255px;
                 border-radius: 10px;
-                text-align: center;
-                font-size: 14px;
-                font-weight: 700;
-                line-height: 25px;
+            }
+            
+
+            .icons-logement {
+                height: 100%;
+
+                .arrows {
+                    width: 96%;
+                    height: 100%;
+                    margin: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    img {
+                        cursor: pointer;
+                        transition: 0.4s;
+                        
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+
+                        @media screen and (max-width: 560px) {
+                            height: 24px;
+                        }
+                    }
+                }
+
+                p {
+                    text-align: center;
+                    color: white;
+                    margin: -50px 0;
+                    font-size: 18px;
+
+                    @media screen and (max-width: 560px) {
+                        display: none;
+                    }
+                }
             }
         }
-
-        
-    } 
-
-    .host-infos {
+    }
+    
+    .announce-container {
+        margin: 25px 0;
         display: flex;
-        flex-direction: column;
-        gap: 20px;
+        justify-content: space-between;
+        gap: 50px;
+
+        @media screen and (max-width: 560px) {
+            flex-direction: column;
+            gap: 20px;
+        }
         
-
-    .host-announce {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 10px;
-
-            p {
-                font-size: 18px;
+        
+        
+        .infos-announce {
+            
+            h1 {
                 color: $color-1;
-                text-align: right;
-                line-height: 25px;
-                width: 50%;
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 50px;
+
+                @media screen and (max-width: 560px) {
+                    font-size: 20px;
+                    line-height: 28px;
+                    margin-bottom: 6px;
+                }
+            }
+
+            span {
+                font-size: 18px;
+
+                @media screen and (max-width: 560px) {
+                    font-size: 16px;
+                }
+            }
+            
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-top: 20px;
+
+                @media screen and (max-width: 560px) {
+                    margin-top: 12px;
+                }
                 
+                li {
+                    list-style: none;
+                    background: $color-1;
+                    color: white;
+                    padding: 2.5px 40px;
+                    border-radius: 10px;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 25px;
+
+                    @media screen and (max-width: 560px) {
+                        font-size: 12px;
+                        padding: 1px 25px;
+                    }
+                }
             }
+            
+            
+        } 
+        
+        .host-infos {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
 
-            img {
-                border-radius: 50%;
-                width: 64px;
+            @media screen and (max-width: 560px) {
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
             }
-    } 
+            
+            
+            .host-announce {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 10px;
+                
+                p {
+                    font-size: 18px;
+                    color: $color-1;
+                    text-align: right;
+                    line-height: 25px;
+                    width: 50%;
 
-    .star-rating {
-        display: flex;
-        justify-content: flex-end;
-        gap: 10px;
-   
-        i {
-            font-size: 22px; 
+                    @media screen and (max-width: 560px) {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                    
+                }
+                
+                img {
+                    border-radius: 50%;
+                    width: 64px;
+
+                    @media screen and (max-width: 560px) {
+                        width: 40px;
+                    }
+                }
+            } 
+            
+            .star-rating {
+                display: flex;
+                justify-content: flex-end;
+                gap: 10px;
+
+                @media screen and (max-width: 560px) {
+                    gap: 6px;
+                }
+                
+                i {
+                    font-size: 22px; 
+
+                    @media screen and (max-width: 560px) {
+                        font-size: 18px;
+                    }
+                }
+                
+                .full-star {
+                    color: $color-1;
+                }
+                
+                .empty-star {
+                    color: $white3;
+                }
+            }    
+            
         }
-
-        .full-star {
-            color: $color-1;
-        }
-
-        .empty-star {
-            color: $white2;
-        }
-    }    
-
     }
 }

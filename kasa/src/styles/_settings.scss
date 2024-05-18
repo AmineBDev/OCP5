@@ -20,8 +20,8 @@ $font-3: "font-3", sans-serif;
 $color-1: #FF6060;
 $black: black;
 $white: white;
-$white2: #dddddd;
-$white3: #C4C4C4;
+$white2: #F6F6F6;
+$white3: #e2e2e2;
 
 * {
     margin: 0;
@@ -29,9 +29,10 @@ $white3: #C4C4C4;
     box-sizing: border-box;
     font-family: $font-1;
     text-decoration: none;
+    list-style: none;
 
     a:visited {
-    color: black;
-}
+        color: black;
+    }
 }
 

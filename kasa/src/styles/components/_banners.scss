@@ -1,0 +1,85 @@
+.banner-container {
+    background: url(../../../public/img/img-src-1.png) center/cover;
+    height: 220px;
+    max-width: 1240px;
+    margin: auto;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    @media screen and (max-width: 1300px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 560px) {
+        height: 110px;
+        border-radius: 10px;
+    }
+
+    .banner-text {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+        color: white;
+        font-size: 48px;
+        position: relative;
+        font-family: $font-3;
+
+        @media screen and (max-width: 560px) {
+            font-size: 24px;
+            text-shadow: none;
+          }
+    }
+}
+
+.banner-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+
+    @media screen and (max-width: 560px) {
+        border-radius: 10px;
+    }
+}
+
+// banner about : 
+
+.banner-about-container {
+    background: url(../../../public/img/img-src-2.png) center/cover;
+    height: 220px;
+    max-width: 1240px;
+    margin: auto;
+    border-radius: 25px;
+    position: relative;
+    padding: 20px;
+
+    @media screen and (max-width: 1300px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 560px) {
+        height: 110px;
+        border-radius: 10px;
+    }
+}
+
+.banner-about-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+
+    @media screen and (max-width: 560px) {
+        border-radius: 10px;
+    }
+}

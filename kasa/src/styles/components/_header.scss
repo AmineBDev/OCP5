@@ -1,18 +1,39 @@
 header {
-    width: 70%;
+    max-width: 1240px;
     margin: 45px auto 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 1300px) {
+      margin: 25px auto;
+      width: 90%;
+    }
+
+    @media screen and (max-width: 560px) {
+      width: 90%;
+
+      img {
+        height: 40px;
+      }
+    }
 
     ul {
         display: flex;
         gap: 60px;
         align-items: center;
 
+        @media screen and (max-width: 560px) {
+          gap: 20px;
+        }
+
         li {
             list-style-type: none;
             font-size: 24px;
+
+            @media screen and (max-width: 560px) {
+              font-size: 16px;
+            }
             
             a {
                 position: relative;

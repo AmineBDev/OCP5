@@ -1,6 +1,10 @@
 .error-container {
-    width: 70%;
+    max-width: 1240px;
     margin: auto;
+
+    @media screen and (max-width: 1300px) {
+        width: 90%;
+    }
 
     h1 {
         margin: 140px 0;
@@ -8,6 +12,16 @@
         color: $color-1;
         font-size: 290px;
         font-weight: 700;
+
+        @media screen and (max-width: 1300px) {
+            font-size: 200px;
+            margin: 113px 0;
+        }
+        
+        @media screen and (max-width: 560px) {
+            font-size: 100px;
+            margin: 113px 0;
+        }
     }
 
     h2 {
@@ -15,6 +29,17 @@
         color: $color-1;
         font-size: 36px;
         font-weight: 500;
+
+        @media screen and (max-width: 1300px) {
+            font-size: 26px;
+            width: 70%;
+            margin: auto;
+        }
+
+        @media screen and (max-width: 560px) {
+            font-size: 18px;
+            line-height: 25px;
+          }
     }
 
     p {
@@ -23,5 +48,15 @@
         font-size: 18px;
         font-weight: 500;
         text-decoration-line: underline;
+
+        @media screen and (max-width: 1300px) {
+            font-size: 16px;
+            margin: 113px 0;
+        }
+
+        @media screen and (max-width: 560px) {
+            font-size: 14px;
+            margin: 113px 0;
+          }
     }
 }
