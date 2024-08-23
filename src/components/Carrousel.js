@@ -14,7 +14,12 @@ const Carrousel = ({ pics }) => {
                 className="img-logement"
                 style={{ backgroundImage: `url(${pic})` }}
               >
-                <div className="icons-logement">
+                <div
+                  className="icons-logement"
+                  style={{
+                    visibility: pics.length > 1 ? "visible" : "hidden",
+                  }}
+                >
                   <div className="arrows">
                     <img
                       src="../img/left-arrow.svg"
